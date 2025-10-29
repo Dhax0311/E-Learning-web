@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile - PresUniv E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<body>
+
+
+    <div style="display: flex; justify-content: center; align-items: flex-start; min-height: 50vh; padding-bottom: 40px;">
+
+        <div class="container" style="max-width: 600px; padding: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            <h2 style="text-align: center; margin-bottom: 30px; border: none;">Update Your Information</h2>
+            
+            <form id="editProfileForm" action="profile.html" method="get" enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <label for="profilePic">Change Profile Photo:</label>
+                    <input type="file" id="profilePic" name="profilePic" accept="image/png, image/jpeg" style="padding: 10px; border: 1px solid var(--gray-200); border-radius: 5px; width: calc(100% - 22px);">
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" value="Danilo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" value="danilo@student.president.ac.id">
+                </div>
+                
+                <div class="form-group">
+                    <label for="major">Major:</label>
+                    <input type="text" id="major" name="major" value="Information Technology">
+                </div>
+
+                <div class="form-group">
+                    <label for="faculty">Faculty:</label>
+                    <select id="faculty" name="faculty">
+                        <option value="computing" selected>Faculty of Computing</option>
+                        <option value="business">Faculty of Business</option>
+                        <option value="engineering">Faculty of Engineering</option>
+                        <option value="humanities">Faculty of Humanities</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address">Jababeka, Cikarang</textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" style="margin-top: 20px;">Save Changes</button>
+                
+                <a href="profile.html" target="mainFrame" class="btn" style="background-color: #555; text-align: center; margin-top: 10px;">
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>PresUniv E-Learning</h4>
+                <p style="font-size: 14px;">Your Gateway to Global Education and Innovation.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="about.html" target="mainFrame">About Us</a></li>
+                    <li><a href="contact.html" target="mainFrame">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe to our Newsletter</h4>
+                <p style="font-size: 14px;">Subscribe now and join our growing community!</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 President University E-Learning. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

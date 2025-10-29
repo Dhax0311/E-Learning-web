@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile - PresUniv E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .profile-layout {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 30px;
+        }
+
+        .profile-sidebar {
+            
+            flex-basis: 300px; 
+            min-width: 250px;
+            
+            
+            background: var(--white);
+            
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+            align-self: flex-start; 
+        }
+
+        .profile-pic {
+           
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .profile-sidebar h3 {
+            
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 24px;
+            color: var(--dark-blue);
+        }
+
+        .profile-sidebar p {
+            color: var(--gray-400);
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        .profile-sidebar .btn {
+            display: block; 
+            width: 100%;
+            box-sizing: border-box; 
+            margin-top: 15px;
+        }
+        
+        .profile-sidebar .btn-logout {
+           
+            background-color: #dc2626; 
+        }
+        .profile-sidebar .btn-logout:hover {
+            background-color: #b91c1c;
+        }
+
+        .profile-content {
+            flex: 1; 
+            min-width: 300px;
+        }
+
+        .profile-details {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .profile-details h2 {
+            margin-top: 0;
+            border-bottom: 2px solid var(--gray-200);
+            padding-bottom: 10px;
+        }
+
+        .profile-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .profile-details ul li {
+            font-size: 16px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        .profile-details ul li strong {
+            
+            color: var(--dark-blue);
+            width: 120px; 
+            min-width: 120px;
+        }
+
+        .profile-details ul li span {
+            color: var(--text-color);
+        }
+
+        .calendar-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 75%; 
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid var(--gray-200);
+        }
+        .calendar-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .login-activity {
+            margin-top: 30px;
+            text-align: left; 
+        }
+        .login-activity h4 {
+            font-size: 18px;
+            color: var(--dark-blue);
+            margin: 0 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .login-activity ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-height: 200px; 
+            overflow-y: auto;
+        }
+        .login-activity li {
+            font-size: 14px;
+            padding: 10px 5px;
+            border-bottom: 1px solid #f0f0f0; 
+        }
+        .login-activity li:last-child {
+            border-bottom: none; 
+        }
+        .login-activity li strong {
+            display: block; 
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .login-activity li small {
+            font-size: 12px;
+            color: var(--gray-400);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="profile-layout">
+            
+            <aside class="profile-sidebar">
+                <img src="./img/profile/Home Header Img.png" alt="Foto Profil" class="profile-pic">
+                
+                <h3>Danilo</h3> 
+                <p>Student ID: 00xxxxxxxxxx</p>
+                
+                <a href="edit-profile.html" target="mainFrame" class="btn">Edit Profile</a>
+                <a href="home.html" target="mainFrame" class="btn btn-logout">Logout</a>
+
+
+                <div class="login-activity">
+                    <h4>Recent Login Activity</h4>
+                    <ul>
+                        <li>
+                            <strong>Chrome on Windows</strong>
+                            <small>Jakarta, ID - 5 mins ago</small>
+                        </li>
+                        <li>
+                            <strong>Safari on iPhone</strong>
+                            <small>Bekasi, ID - 2 hours ago</small>
+                        </li>
+                        <li>
+                            <strong>Firefox on Windows</strong>
+                            <small>Jakarta, ID - 1 day ago</small>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <main class="profile-content">
+                
+                <div class="profile-details">
+                    <h2>Profile Details</h2>
+                    <ul>
+                        <li><strong>Full Name:</strong> <span>Danilo Guevara Gusmao Viana</span></li>
+                        <li><strong>Email:</strong> <span>danilo@student.president.ac.id</span></li>
+                        <li><strong>Faculty:</strong> <span>Faculty of Computing</span></li>
+                        <li><strong>Major:</strong> <span>Information Technology</span></li>
+                        <li><strong>Address:</strong> <span>Jababeka, Cikarang</span></li>
+                    </ul>
+                </div>
+
+                <h2>My Enrolled Courses</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="./img/pyh.jpg" alt="Python Course">
+                        <div class="card-content">
+                            <h3>Python Programming</h3>
+                            <p>Progress: 75% Complete</p>
+                            <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Continue Learning</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/php-coding-computer-css-data-digital-function-concept.jpg" alt="AWS Course">
+                        <div class="card-content">
+                            <h3>AWS for Beginners</h3>
+                            <p>Progress: 30% Complete</p>
+                            <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="margin-top: 40px;">My Academic Calendar</h2>
+                <div class="calendar-container">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=en.indonesian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FJakarta&mode=MONTH" scrolling="no"></iframe>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>PresUniv E-Learning</h4>
+                <p style="font-size: 14px;">Your Gateway to Global Education and Innovation.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="about.html" target="mainFrame">About Us</a></li>
+                    <li><a href="contact.html" target="mainFrame">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe to our Newsletter</h4>
+                <p style="font-size: 14px;">Subscribe now and join our growing community!</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+              &copy; 2025 President University E-Learning. Develop by Last Group.
+        </div>
+    </footer>
+
+</body>
+</html>

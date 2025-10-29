@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - PresUniv E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .hero {
+            /* ATURAN #2a (Background Properties) */
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('./img/campus.jpg'); /* Gambar seperti di SecretCoder */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* ATURAN #2c (Dimension Properties) */
+            min-height: 500px; /* Lebih tinggi */
+            
+            /* ATURAN #2d (Positioning Properties) */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .hero-text {
+            /* Animasi (Permintaan Anda) */
+            animation: fadeInDown 1.5s ease-out;
+            max-width: 800px;
+        }
+        
+        .hero-text h1 {
+            /* ATURAN #2b (Text/Font Properties) */
+            font-size: 52px; /* Lebih besar */
+            color: var(--white);
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            font-weight: 700;
+            border: none;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-text p {
+            font-size: 20px;
+            color: #e2e8f0;
+            margin-bottom: 40px;
+        }
+        
+        .hero-buttons .btn {
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 14px 30px;
+        }
+
+        /* Definisi Animasi */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ATURAN #2d (Positioning Properties) tambahan */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 24px;
+            animation: bounce 1.5s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .popular-topics {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Learn Job ready skills from free online courses with certificates</h1>
+                <p>
+                    About this e-learning. Developed by Last Group. following Web programming course at President University to create a website framset.
+                </p>
+                <div class="hero-buttons">
+                    <a href="courses.html" target="mainFrame" class="btn">Explore Courses</a>
+                    <a href="register.html" target="mainFrame" class="btn btn-secondary">Register Now</a>
+                </div>
+            </div>
+            <i class="fas fa-chevron-down scroll-indicator"></i>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="./img/icon/2848306_413145-PDTI0M-73.jpg" alt="Learn Anytime">
+                <h4>Learn Anything</h4>
+                <p>Explore a vast library of courses covering diverse subjects at your own pace.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./img/icon/2606559_5894.jpg" alt="Expert Instructors">
+                <h4>Expert Instructors</h4>
+                <p>Gain insights from industry professionals and experienced academics.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./img/icon/228078721_c49f4a55-d100-4476-a164-e05e32d05ecd.jpg" alt="Certificates">
+                <h4>Get Certificates</h4>
+                <p>Earn verifiable certificates upon completion to boost your career prospects.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./img/icon/5985072_7253.jpg" alt="Online Learning">
+                <h4>Online Learning</h4>
+                <p>Access your studies from anywhere, anytime, with our flexible platform.</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-section-image">
+                <img src="./img/emapu.png" alt="Welcome to PresUniv E-Learning">
+            </div>
+            <div class="about-section-content">
+                <h3>Welcome to PresUniv E-Learning</h3>
+                <p>
+                    President University E-Learning provides a dynamic and interactive platform designed to empower students with knowledge and skills for the future. We believe in accessible, high-quality education.
+                </p>
+                <ul>
+                    <li>Expert-led video tutorials</li>
+                    <li>Interactive quizzes & assignments</li>
+                    <li>Downloadable resources</li>
+                    <li>24/7 technical support</li>
+                    <li>Career readiness programs</li>
+                </ul>
+                <a href="about.html" target="mainFrame" class="btn" style="margin-top: 20px;">Read More</a>
+            </div>
+        </div>
+
+        <div class="popular-topics">
+            <h2 class="section-title">Popular Topics to Explore</h2>
+            <div class="topic-grid">
+                <div class="topic-card">Microsoft Excel</div>
+                <div class="topic-card">AWS</div>
+                <div class="topic-card">Python</div>
+                <div class="topic-card">Java</div>
+                <div class="topic-card">Web Design</div>
+                <div class="topic-card">Web Development</div>
+                <div class="topic-card">MySQL</div>
+                <div class="topic-card">UI/UX Design</div>
+            </div>
+        </div>
+
+        <div class="popular-courses" style="margin-top: 60px;">
+            <h2 class="section-title">Explore new and trending free online courses</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="./img/programming-background-with-person-working-with-codes-computer.jpg" alt="HTML Course">
+                    <div class="card-content">
+                        <h3>HTML Course for Beginners</h3>
+                        <p>Learn the fundamentals of web development and structure web pages.</p>
+                        <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Enroll Now ></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/programming-background-collage.jpg"  alt="CSS Course">
+                    <div class="card-content">
+                        <h3>Front End Development - CSS</h3>
+                        <p>Master cascading style sheets for designing beautiful websites.</p>
+                        <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Enroll Now ></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/side-shot-code-editor-using-react-js.jpg" alt="JS Course">
+                    <div class="card-content">
+                        <h3>Introduction to JavaScript</h3>
+                        <p>Build interactive and dynamic websites with JavaScript programming.</p>
+                        <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Enroll Now ></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/pyh.jpg " alt="Python Course">
+                    <div class="card-content">
+                        <h3>Python Programming</h3>
+                        <p>From zero to hero in Python 3. Learn data science and web development.</p>
+                        <a href="#" class="btn" style="padding: 8px 15px; font-size: 14px;">Enroll Now ></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                 <a href="courses.html" target="mainFrame" class="btn">View All Courses</a>
+            </div>
+        </div>
+
+        <div style="background-color: var(--dark-blue); padding: 50px; border-radius: 8px; text-align: center; margin-top: 60px; color: white;">
+            <h2 style="color: var(--white); font-size: 32px; margin-bottom: 20px;">Become an Instructor</h2>
+            <p style="color: #e2e8f0; max-width: 700px; margin: 0 auto 30px; font-size: 18px;">
+                Share your expertise with thousands of learners. Join our community of instructors and make an impact.
+            </p>
+            <a href="#" class="btn" style="background-color: var(--primary-color);">Start Teaching Today</a>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is President University E-Learning?</h3>
+                    <div class="faq-answer">
+                        <p>It's an online platform providing educational resources, courses, and learning tools for President University students, accessible from anywhere.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I enroll in a course?</h3>
+                    <div class="faq-answer">
+                        <p>You can browse our <a href="courses.html" target="mainFrame">Courses</a> page, select a course, and follow the enrollment instructions. Some courses might require prior registration.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Are the certificates recognized?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, certificates issued by President University E-Learning are officially recognized and can be added to your professional profile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer class="main-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <h4>PresUniv E-Learning</h4>
+                <p style="font-size: 14px;">Your Gateway to Global Education and Innovation. Learn anytime, anywhere.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="https://www.facebook.com/president.university"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/president_university/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/president-university"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Link</h4>
+                <ul>
+                    <li><a href="about.html" target="mainFrame">About Us</a></li>
+                    <li><a href="contact.html" target="mainFrame">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">FAQs & Help</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Subscribe to our Newsletter</h4>
+                <p style="font-size: 14px;">Subscribe now and join our growing community of learners committed to lifelong education!</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 President University E-Learning. Develop by Last Group.
+            <div style="margin-top: 10px;">
+                <a href="#" style="color: #a0aec0; text-decoration: none;">Back to top <i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript untuk FAQ (Animasi Sederhana)
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                item.classList.toggle('active');
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    answer.style.marginTop = "10px";
+                    answer.style.opacity = "1";
+                } else {
+                    answer.style.maxHeight = "0";
+                    answer.style.marginTop = "0";
+                    answer.style.opacity = "0";
+                }
+            });
+        });
+    </script>
+    <style>
+        /* Styling untuk FAQ */
+        .faq-container {
+            margin-top: 30px;
+        }
+        .faq-item {
+            background-color: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden; /* Penting untuk animasi max-height */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+        .faq-question {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-blue);
+            cursor: pointer;
+            position: relative;
+            background-color: var(--white);
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #f8fafc;
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            content: '-';
+            transform: translateY(-50%) rotate(0deg); /* Tidak perlu rotate jika sudah '-' */
+        }
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0; /* Mulai dari 0 untuk animasi */
+            opacity: 0;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out, margin 0.5s ease-out, opacity 0.5s ease-out;
+            color: var(--text-color);
+        }
+        .faq-answer p {
+            padding-bottom: 20px; /* Padding di dalam answer */
+            margin-top: 0;
+        }
+    </style>
+</body>
+</html>
